@@ -57,7 +57,7 @@ const checkuser = async (req, res) => {
 //             return res.status(404).json({ message: "usernotFound" });
 //         }
 
-//         const match = await bcrypt.compare(password, data.password); // await here
+//         const match = await bcrypt.compare(password, data.password);
 //         if (match) {
 //             let token = jwt.sign({ email }, "sfsfd");
 //             res.json(data).cookie('token', token);
