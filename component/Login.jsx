@@ -13,7 +13,7 @@ export default function Login() {
             const response = await axios.post('http://localhost:9999/login', { email, password });
             if (response.status === 200) {
                 alert('User Found');
-                navigate(`/page?email=${email}`);  // Passing email in query parameters
+                navigate(`/page?email=${email}`);
             }
         } catch (error) {
             if (error.response) {
